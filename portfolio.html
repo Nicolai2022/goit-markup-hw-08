@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="main-nav container">
+        <nav class="nav main-nav">
+          <a class="logo" lang="en" href="./index.html"
+            >Web<span class="logo-dark">Studio</span></a
+          >
+          <ul class="nav-list header-list list">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current" href="#">Портфоліо</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="contact-list list">
+          <li class="contact-item contact-item-margin">
+            <a class="contact-link hover-link" href="mailto:info@devstudio.com"
+              ><svg class="contact-link-icon" width="16px" height="12px">
+                <use href="./images/symbol-defs.svg#icon-letter"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-item">
+            <a class="contact-link" href="tel:+380961111111"
+              ><svg class="contact-link-icon" width="10px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section portfolio">
+        <div class="container">
+          <h1 class="title visually-hidden">Портфоліо</h1>
+          <ul class="filter-list list">
+            <li class="filter-item">
+              <button class="filter-button hover-button" type="button">
+                Усі
+              </button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button hover-button" type="button">
+                Веб-сайти
+              </button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button hover-button" type="button">
+                Додатки
+              </button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button hover-button" type="button">
+                Дизайн
+              </button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-button hover-button" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <div>
+            <ul class="cards-list list">
+              <li class="cards-item">
+                <a class="link portfolio-link" href="#">
+                  <div class="cards-image-title">
+                    <img
+                      class="cards-image"
+                      src="./images/projectcard1.jpg"
+                      alt="Дві жінки та чоловік"
+                      width="370"
+                    />
+                    <p class="subtitle">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="cards-title-text">
+                    <h2 class="cards-title">Технокряк</h2>
+                    <p class="cards-text">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards-item">
+                <a class="link portfolio-link" href="#">
+                  <div class="cards-image-title">
+                    <img
+                      class="cards-image"
+                      src="./images/projectcard2.jpg"
+                      alt="Два баскетболісти"
+                      width="370"
+                    />
+                    <p class="subtitle">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="cards-title-text">
+                    <h2 class="cards-title">
+                      Постер<span lang="en">New Orlean vs Golden Star</span>
+                    </h2>
+                    <p class="cards-text">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards-item">
+                <a class="link portfolio-link" href="#">
+                  <div class="cards-image-title">
+                    <img
+                      class="cards-image"
+                      src="./images/projectcard3.jpg"
+                      alt="Логотип ресторану"
+                      width="370"
+                    />
+                    <p class="subtitle">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="cards-title-text">
+                    <h2 class="cards-title">
+                      Ресторан <span lang="en">Seafood</span>
+                    </h2>
+                    <p class="cards-text">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards-item">
+                <a class="link portfolio-link" href="#">
+                  <div class="cards-image-title">
+                    <img
+                      class="cards-image"
+                      src="./images/projectcard4.jpg"
+                      alt="Навушники"
+                      width="370"
+                    />
+                    <p class="subtitle">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="cards-title-text">
+                    <h2 class="cards-title">
+                      Проєкт <span lang="en">Prime</span>
+                    </h2>
+                    <p class="cards-text">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards-item">
+                <a class="link portfolio-link" href="#">
+                  <div class="cards-image-title">
+                    <img
+                      class="cards-image"
+                      src="./images/projectcard5.jpg"
+                      alt="Дві коробки"
+                      width="370"
+                    />
+                    <p class="subtitle">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="cards-title-text">
+                    <h2 class="cards-title">
+                      Проєкт <span lang="en">Boxes</span>
+                    </h2>
+                    <p class="cards-text">Додаток</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards-item">
+                <a class="link portfolio-link" href="#">
+                  <div class="cards-image-title">
+                    <img
+                      class="cards-image"
+                      src="./images/projectcard6.jpg"
+                      alt="Монітор"
+                      width="370"
+                    />
+                    <p class="subtitle">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="cards-title-text">
+                    <h2 class="cards-title" lang="en">
+                      Inspiration has no Borders
+                    </h2>
+                    <p class="cards-text">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards-item">
+                <a class="link portfolio-link" href="#">
+                  <div class="cards-image-title">
+                    <img
+                      class="cards-image"
+                      src="./images/projectcard7.jpg"
+                      alt="Журнал"
+                      width="370"
+                    />
+                    <p class="subtitle">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="cards-title-text">
+                    <h2 class="cards-title">
+                      Видання <span lang="en">Limited Edition</span>
+                    </h2>
+                    <p class="cards-text">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards-item">
+                <a class="link portfolio-link" href="#">
+                  <div class="cards-image-title">
+                    <img
+                      class="cards-image"
+                      src="./images/projectcard8.jpg"
+                      alt="Підвіска з буквами"
+                      width="370"
+                    />
+                    <p class="subtitle">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="cards-title-text">
+                    <h2 class="cards-title">
+                      Проєкт <span lang="en">LAB</span>
+                    </h2>
+                    <p class="cards-text">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li class="cards-item">
+                <a class="link portfolio-link" href="#">
+                  <div class="cards-image-title">
+                    <img
+                      class="cards-image"
+                      src="./images/projectcard9.jpg"
+                      alt="Ноутбук"
+                      width="370"
+                    />
+                    <p class="subtitle">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                  <div class="cards-title-text">
+                    <h2 class="cards-title" lang="en">Growing Business</h2>
+                    <p class="cards-text">Додаток</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container container-box">
+        <div class="footer-address-box">
+          <div class="footer-logo">
+            <a class="logo" lang="en" href="./index.html"
+              >Web<span class="logo-liht">Studio</span></a
+            >
+          </div>
+          <address class="address">
+            <ul class="address-list list">
+              <li class="address-item address-item-margin">
+                <a
+                  class="address-link-white"
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="address-item address-item-margin">
+                <a class="address-link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="address-item">
+                <a class="address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <p class="footer-title">приєднуйтесь</p>
+          <ul class="list footer-list-icon">
+            <li class="address-icon">
+              <a class="footer-address-link" href="https://www.instagram.com/">
+                <svg
+                  class="address-icon-social address-icon-instagram"
+                  width="20px"
+                  height="20px"
+                >
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="address-icon">
+              <a class="footer-address-link" href="https://twitter.com/">
+                <svg
+                  class="address-icon-social address-icon-twitter"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="address-icon">
+              <a class="footer-address-link" href="https://www.facebook.com/">
+                <svg
+                  class="address-icon-social address-icon-facebook"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="address-icon">
+              <a class="footer-address-link" href="https://www.linkedin.com/">
+                <svg
+                  class="address-icon-social address-icon-linkedin"
+                  width="20px"
+                  height="20px"
+                >
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <p class="footer-title-newsletter">Підпишіться на розсилку</p>
+          <input
+            type="email"
+            class="footer-input"
+            name="mail"
+            id="mail"
+            placeholder="E-mail"
+          />
+          <label for="mail" class="footer-label"></label>
+          <button type="submit" class="footer-button">
+            Підписатися<svg
+              class="icon-button-newsletter"
+              width="24px"
+              height="24px"
+            >
+              <use href="./images/symbol-defs.svg#icon-send-telegram"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
