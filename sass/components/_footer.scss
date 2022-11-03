@@ -1,0 +1,228 @@
+.footer {
+  background-color: $background-footer;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer__tablet {
+    @media screen and (min-width: 768px) {
+      justify-content: space-around;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+      align-items: baseline;
+  }
+  }
+
+  // .footer__container {
+  //   display: flex;
+  // }
+
+.footer__block {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    // margin-top: 60px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+}
+
+.footer-box__title {
+  margin-top: 0px;
+  color: $light-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    margin-top: 60px;
+}
+}
+
+// .footer-box {
+//   margin-left: 70px;
+// }
+
+
+.logo__liht {
+  color: $light-color;
+}
+
+.address__list {
+  @media screen and (min-width: 480px) {
+    text-align: center;
+}
+}
+
+
+
+.address__link {
+  color: $light-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+
+  transition: color 250ms $transform-function;
+}
+
+.address-link {
+  color: $primary-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(14 / 16);
+}
+
+/* cvg */
+
+.address__item {
+  font-size: 14px;
+}
+
+.address__item--margin {
+  margin-bottom: 9px;
+}
+
+.footer-socials__list {
+  @media screen and (min-width: 480px) {
+   display: flex;
+  justify-content: center;
+  gap: 10px; 
+}
+  
+}
+
+.footer-socials__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: $light-color;
+
+  transition: background-color 250ms $transform-function;
+}
+
+.footer-socials__link:hover,
+.footer-socials__link:focus {
+  background-color: $accent-color;
+}
+
+.footer-socials__icon {
+  fill: currentColor;
+}
+
+
+
+
+
+/* Підпишіться на розсилку */
+
+.block-newsletter {
+
+  // margin-left: 93px;
+
+  @media screen and (min-width: 480px) {
+ margin-top: 60px;
+ text-align: center;
+}
+}
+
+.block-newsletter__text {
+  margin: 0;
+  color: $light-color;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.block__email {
+  // width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  background-color: $background-footer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  cursor: pointer;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    text-align: center;
+   }
+}
+
+// .block {
+//   display: flex;
+// }
+
+.block__button {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 28px;
+  /* margin-left: 12px; */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+
+  margin-left: 12px;
+
+  background-color: $accent-color;
+  color: $light-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: var(--accent-color);
+
+  transition: background-color 250ms $transform-function;
+
+  @media screen and (min-width: 480px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+   }
+
+   @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+   }
+}
+
+.block__button:hover,
+.block__button:focus {
+  background-color: $accent-btn;
+}
+
+.icon-button-newsletter {
+  position: absolute;
+  bottom: 20%;
+  right: 28px;
+}

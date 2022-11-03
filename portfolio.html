@@ -17,36 +17,36 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="main-nav container">
-        <nav class="nav main-nav">
+      <div class="container header__container">
+        <nav class="site-nav">
           <a class="logo" lang="en" href="./index.html"
-            >Web<span class="logo-dark">Studio</span></a
+            >Web<span class="logo__dark">Studio</span></a
           >
-          <ul class="nav-list header-list list">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Студія</a>
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Студія</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link current" href="#">Портфоліо</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link current" href="#">Портфоліо</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="#">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contact-list list">
-          <li class="contact-item contact-item-margin">
-            <a class="contact-link hover-link" href="mailto:info@devstudio.com"
-              ><svg class="contact-link-icon" width="16px" height="12px">
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link hover-link" href="mailto:info@devstudio.com"
+              ><svg class="contacts__icon" width="16px" height="12px">
                 <use href="./images/symbol-defs.svg#icon-letter"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="contact-item">
-            <a class="contact-link" href="tel:+380961111111"
-              ><svg class="contact-link-icon" width="10px" height="16px">
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111"
+              ><svg class="contacts__icon" width="10px" height="16px">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -55,280 +55,278 @@
       </div>
     </header>
     <main>
-      <section class="section portfolio">
+      <section class="section section-portfolio">
         <div class="container">
-          <h1 class="title visually-hidden">Портфоліо</h1>
-          <ul class="filter-list list">
-            <li class="filter-item">
-              <button class="filter-button hover-button" type="button">
+          <h1 class="section-portfolio__title title visually-hidden">Портфоліо</h1>
+          <ul class="control list">
+            <li class="control__item">
+              <button class="control__button control__button--active" type="button">
                 Усі
               </button>
             </li>
-            <li class="filter-item">
-              <button class="filter-button hover-button" type="button">
+            <li class="control__item">
+              <button class="control__button control__button--active" type="button">
                 Веб-сайти
               </button>
             </li>
-            <li class="filter-item">
-              <button class="filter-button hover-button" type="button">
+            <li class="control__item">
+              <button class="control__button control__button--active" type="button">
                 Додатки
               </button>
             </li>
-            <li class="filter-item">
-              <button class="filter-button hover-button" type="button">
+            <li class="control__item">
+              <button class="control__button control__button--active" type="button">
                 Дизайн
               </button>
             </li>
-            <li class="filter-item">
-              <button class="filter-button hover-button" type="button">
+            <li class="control__item">
+              <button class="control__button control__button--active" type="button">
                 Маркетинг
               </button>
             </li>
           </ul>
-          <div>
-            <ul class="cards-list list">
-              <li class="cards-item">
-                <a class="link portfolio-link" href="#">
-                  <div class="cards-image-title">
+            <ul class="grid list">
+              <li class="grid__item">
+                <a class="link grid__link" href="#">
+                  <div class="grid__thumb">
                     <img
-                      class="cards-image"
+                      class="grid__image"
                       src="./images/projectcard1.jpg"
                       alt="Дві жінки та чоловік"
                       width="370"
                     />
-                    <p class="subtitle">
+                    <p class="grid__subtitle">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="cards-title-text">
-                    <h2 class="cards-title">Технокряк</h2>
-                    <p class="cards-text">Веб-сайт</p>
+                  <div class="product">
+                    <h2 class="product__title">Технокряк</h2>
+                    <p class="product__text">Веб-сайт</p>
                   </div>
                 </a>
               </li>
-              <li class="cards-item">
-                <a class="link portfolio-link" href="#">
-                  <div class="cards-image-title">
+              <li class="grid__item">
+                <a class="link grid__link" href="#">
+                  <div class="grid__thumb">
                     <img
-                      class="cards-image"
+                      class="grid__image"
                       src="./images/projectcard2.jpg"
                       alt="Два баскетболісти"
                       width="370"
                     />
-                    <p class="subtitle">
+                    <p class="grid__subtitle">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="cards-title-text">
-                    <h2 class="cards-title">
+                  <div class="product">
+                    <h2 class="product__title">
                       Постер<span lang="en">New Orlean vs Golden Star</span>
                     </h2>
-                    <p class="cards-text">Веб-сайт</p>
+                    <p class="product__text">Веб-сайт</p>
                   </div>
                 </a>
               </li>
-              <li class="cards-item">
-                <a class="link portfolio-link" href="#">
-                  <div class="cards-image-title">
+              <li class="grid__item">
+                <a class="link grid__link" href="#">
+                  <div class="grid__thumb">
                     <img
-                      class="cards-image"
+                      class="grid__image"
                       src="./images/projectcard3.jpg"
                       alt="Логотип ресторану"
                       width="370"
                     />
-                    <p class="subtitle">
+                    <p class="grid__subtitle">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="cards-title-text">
-                    <h2 class="cards-title">
+                  <div class="product">
+                    <h2 class="product__title">
                       Ресторан <span lang="en">Seafood</span>
                     </h2>
-                    <p class="cards-text">Дизайн</p>
+                    <p class="product__text">Дизайн</p>
                   </div>
                 </a>
               </li>
-              <li class="cards-item">
-                <a class="link portfolio-link" href="#">
-                  <div class="cards-image-title">
+              <li class="grid__item">
+                <a class="link grid__link" href="#">
+                  <div class="grid__thumb">
                     <img
-                      class="cards-image"
+                      class="grid__image"
                       src="./images/projectcard4.jpg"
                       alt="Навушники"
                       width="370"
                     />
-                    <p class="subtitle">
+                    <p class="grid__subtitle">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="cards-title-text">
-                    <h2 class="cards-title">
+                  <div class="product">
+                    <h2 class="product__title">
                       Проєкт <span lang="en">Prime</span>
                     </h2>
-                    <p class="cards-text">Маркетинг</p>
+                    <p class="product__text">Маркетинг</p>
                   </div>
                 </a>
               </li>
-              <li class="cards-item">
-                <a class="link portfolio-link" href="#">
-                  <div class="cards-image-title">
+              <li class="grid__item">
+                <a class="link grid__link" href="#">
+                  <div class="grid__thumb">
                     <img
-                      class="cards-image"
+                      class="grid__image"
                       src="./images/projectcard5.jpg"
                       alt="Дві коробки"
                       width="370"
                     />
-                    <p class="subtitle">
+                    <p class="grid__subtitle">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="cards-title-text">
-                    <h2 class="cards-title">
+                  <div class="product">
+                    <h2 class="product__title">
                       Проєкт <span lang="en">Boxes</span>
                     </h2>
-                    <p class="cards-text">Додаток</p>
+                    <p class="product__text">Додаток</p>
                   </div>
                 </a>
               </li>
-              <li class="cards-item">
-                <a class="link portfolio-link" href="#">
-                  <div class="cards-image-title">
+              <li class="grid__item">
+                <a class="link grid__link" href="#">
+                  <div class="grid__thumb">
                     <img
-                      class="cards-image"
+                      class="grid__image"
                       src="./images/projectcard6.jpg"
                       alt="Монітор"
                       width="370"
                     />
-                    <p class="subtitle">
+                    <p class="grid__subtitle">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="cards-title-text">
-                    <h2 class="cards-title" lang="en">
+                  <div class="product">
+                    <h2 class="product__title" lang="en">
                       Inspiration has no Borders
                     </h2>
-                    <p class="cards-text">Веб-сайт</p>
+                    <p class="product__text">Веб-сайт</p>
                   </div>
                 </a>
               </li>
-              <li class="cards-item">
-                <a class="link portfolio-link" href="#">
-                  <div class="cards-image-title">
+              <li class="grid__item">
+                <a class="link grid__link" href="#">
+                  <div class="grid__thumb">
                     <img
-                      class="cards-image"
+                      class="grid__image"
                       src="./images/projectcard7.jpg"
                       alt="Журнал"
                       width="370"
                     />
-                    <p class="subtitle">
+                    <p class="grid__subtitle">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="cards-title-text">
-                    <h2 class="cards-title">
+                  <div class="product">
+                    <h2 class="product__title">
                       Видання <span lang="en">Limited Edition</span>
                     </h2>
-                    <p class="cards-text">Веб-сайт</p>
+                    <p class="product__text">Веб-сайт</p>
                   </div>
                 </a>
               </li>
-              <li class="cards-item">
-                <a class="link portfolio-link" href="#">
-                  <div class="cards-image-title">
+              <li class="grid__item">
+                <a class="link grid__link" href="#">
+                  <div class="grid__thumb">
                     <img
-                      class="cards-image"
+                      class="grid__image"
                       src="./images/projectcard8.jpg"
                       alt="Підвіска з буквами"
                       width="370"
                     />
-                    <p class="subtitle">
+                    <p class="grid__subtitle">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="cards-title-text">
-                    <h2 class="cards-title">
+                  <div class="product">
+                    <h2 class="product__title">
                       Проєкт <span lang="en">LAB</span>
                     </h2>
-                    <p class="cards-text">Маркетинг</p>
+                    <p class="product__text">Маркетинг</p>
                   </div>
                 </a>
               </li>
-              <li class="cards-item">
-                <a class="link portfolio-link" href="#">
-                  <div class="cards-image-title">
+              <li class="grid__item">
+                <a class="link grid__link" href="#">
+                  <div class="grid__thumb">
                     <img
-                      class="cards-image"
+                      class="grid__image"
                       src="./images/projectcard9.jpg"
                       alt="Ноутбук"
                       width="370"
                     />
-                    <p class="subtitle">
+                    <p class="grid__subtitle">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
                       особу.
                     </p>
                   </div>
-                  <div class="cards-title-text">
-                    <h2 class="cards-title" lang="en">Growing Business</h2>
-                    <p class="cards-text">Додаток</p>
+                  <div class="product">
+                    <h2 class="product__title" lang="en">Growing Business</h2>
+                    <p class="product__text">Додаток</p>
                   </div>
                 </a>
               </li>
             </ul>
-          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container container-box">
-        <div class="footer-address-box">
-          <div class="footer-logo">
+      <div class="container footer__container">
+        <div class="footer__desktop">
+          <div class="footer__block">
             <a class="logo" lang="en" href="./index.html"
-              >Web<span class="logo-liht">Studio</span></a
+              >Web<span class="logo__liht">Studio</span></a
             >
           </div>
           <address class="address">
-            <ul class="address-list list">
-              <li class="address-item address-item-margin">
+            <ul class="address__list list">
+              <li class="address__item address__item--margin">
                 <a
-                  class="address-link-white"
+                  class="address__link"
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="address-item address-item-margin">
+              <li class="address__item address__item--margin">
                 <a class="address-link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
-              <li class="address-item">
+              <li class="address__item">
                 <a class="address-link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
@@ -336,64 +334,74 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social">
-          <p class="footer-title">приєднуйтесь</p>
-          <ul class="list footer-list-icon">
-            <li class="address-icon">
-              <a class="footer-address-link" href="https://www.instagram.com/">
-                <svg
-                  class="address-icon-social address-icon-instagram"
-                  width="20px"
-                  height="20px"
+        <div class="footer-box">
+          <p class="footer-box__title">Приєднуйтесь</p>
+          <div class="footer-socials">
+            <ul class="list footer-socials__list">
+              <li class="footer-socials__item">
+                <a
+                  class="footer-socials__link"
+                  href="https://www.instagram.com/"
                 >
-                  <use
-                    href="./images/symbol-defs.svg#icon-instagram"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="address-icon">
-              <a class="footer-address-link" href="https://twitter.com/">
-                <svg
-                  class="address-icon-social address-icon-twitter"
-                  width="20px"
-                  height="20px"
-                >
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="address-icon">
-              <a class="footer-address-link" href="https://www.facebook.com/">
-                <svg
-                  class="address-icon-social address-icon-facebook"
-                  width="20px"
-                  height="20px"
-                >
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="address-icon">
-              <a class="footer-address-link" href="https://www.linkedin.com/">
-                <svg
-                  class="address-icon-social address-icon-linkedin"
-                  width="20px"
-                  height="20px"
-                >
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
+                  <svg
+                    class="footer-socials__icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use
+                      href="./images/symbol-defs.svg#icon-instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="footer-socials__item">
+                <a class="footer-socials__link" href="https://twitter.com/">
+                  <svg
+                    class="footer-socials__icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use
+                      href="./images/symbol-defs.svg#icon-twitter"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="footer-socials__item">
+                <a class="footer-socials__link" href="https://www.facebook.com/">
+                  <svg
+                    class="footer-socials__icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use
+                      href="./images/symbol-defs.svg#icon-facebook"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="footer-socials__item">
+                <a class="footer-socials__link" href="https://www.linkedin.com/">
+                  <svg
+                    class="footer-socials__icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use
+                      href="./images/symbol-defs.svg#icon-linkedin"
+                    ></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-newsletter">
-          <p class="footer-title-newsletter">Підпишіться на розсилку</p>
-          <input
+        <div class="block-newsletter">
+          <p class="block-newsletter__text">Підпишіться на розсилку</p>
+          <form class="block"><input
             type="email"
-            class="footer-input"
+            class="block__email"
             name="mail"
             id="mail"
             placeholder="E-mail"
           />
-          <label for="mail" class="footer-label"></label>
-          <button type="submit" class="footer-button">
+          <button type="submit" class="block__button">
             Підписатися<svg
               class="icon-button-newsletter"
               width="24px"
@@ -402,6 +410,7 @@
               <use href="./images/symbol-defs.svg#icon-send-telegram"></use>
             </svg>
           </button>
+        </form>
         </div>
       </div>
     </footer>

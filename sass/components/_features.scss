@@ -1,0 +1,81 @@
+.fiatures-section__list {
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 30px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      // gap: 30px;
+      margin: -15px;
+    }
+  }
+  
+
+  .fiatures-section__list .fiatures-section__item {
+     @media screen and (min-width: 480px) {
+      width: 450px;
+      margin-top: 60px;
+  }
+
+  @media screen and (min-width: 480px) {
+   width: calc((100% - 4 * 15px) / 2);
+   margin: 15px;
+
+}
+
+  }
+ 
+
+
+
+  // .fiatures-section__list .fiatures-section__item {
+  //   width: 270px;
+  // }
+  
+  .fiatures-block__title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: $secondary-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 30px;
+
+    @media screen and(min-width:480px) {
+      text-align: center;
+    }
+  }
+  
+  .fiatures-block__text {
+    margin-top: 0px;
+    color: $primary-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  
+  .fiatures-block {
+    background-color: $background-section;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and(min-width:480px) {
+      width: 450px;
+    }
+
+    @media screen and(min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      // margin: -15px;
+      width: 354px;
+      
+    }
+  }

@@ -1,0 +1,216 @@
+/* Форми */
+
+.form-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    color: $secondary-color;
+  }
+  
+  .form__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    color: $secondary-color;
+  }
+  
+  
+  .form__input {
+    position: relative;
+    display: block;
+    margin-top: 4px;
+  }
+  
+  .form__area {
+    padding-left: 42px;
+    display: block;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  
+    width: 448px;
+    height: 40px;
+    cursor: pointer;
+    fill: currentColor;
+  
+    transition: border-color 250ms $transform-function;
+    outline: none;
+  }
+  
+  .form__area:focus + .form__icon {
+    fill: $accent-color;
+  }
+  
+  .form__area:hover + .form__icon {
+    fill: $accent-color;
+  }
+  
+  .form__area:hover,
+  .form__area:focus {
+    border-color: $accent-color;
+  }
+  
+  .form__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    cursor: pointer;
+    transform: translateY(-50%);
+  
+    transition: fill 250ms $transform-function;
+  }
+  
+  .form__item:not(:last-child) {
+    /* position: relative; */
+    margin-bottom: 10px;
+  }
+  
+  
+  .form__field {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+  
+    color: $primary-color;
+  }
+  
+  .form-comment__text {
+    margin-top: 4px;
+    display: block;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  
+    padding: 12px 16px;
+    cursor: pointer;
+  
+    color: rgba(117, 117, 117, 0.5);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+  
+    transition: border-color 250ms $transform-function;
+    outline: none;
+  }
+  
+  .form-comment__text:hover,
+  .form-comment__text:focus {
+    border-color: $accent-color;
+  }
+  
+  .form-comment {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .button--success {
+    padding: 10px 52px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 00.06em;
+    cursor: pointer;
+  
+    margin: 0 auto;
+    display: block;
+  
+    background-color: $accent-color;
+    color: $light-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: $accent-color;
+  
+    margin-top: 30px;
+  
+    transition: background-color 250ms $transform-function;
+  }
+  
+  .button--success:hover,
+  .button--success:focus {
+    background-color: $accent-btn;
+  }
+  
+  /* форми чекбокс */
+  
+  .checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    position: absolute;
+  }
+  
+  .form-topic {
+    display: flex;
+    position: relative;
+    /* padding-bottom: 30px; */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+  
+    color: $primary-color;
+  
+    /* padding-left: 40px; */
+    /* margin-top: 20px; */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .checkbox:checked + .form-topic__box {
+    background-color: $accent-color;
+    fill: $accent-color;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-topic__box {
+    display: flex;
+    border: 2px solid $secondary-color;
+    border-radius: 3px;
+    width: 16px;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .icon-checkbox {
+    position: absolute;
+    top: 0%;
+    left: 20px;
+  }
+  
+  .form-topic__text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: $primary-color;
+    margin-left: -10px;
+    cursor: pointer;
+  }
+  
+  .form-topic__link {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: $accent-btn;
+    text-decoration: underline;
+  }
+  
+  .form-topic__icon {
+    fill: transparent;
+  }

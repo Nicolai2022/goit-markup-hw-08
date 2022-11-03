@@ -1,0 +1,98 @@
+.hero {
+    color: $light-color;
+    background-image: url(../../images/hero-img.jpg);
+    background-color: $background-footer;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero-img.jpg);
+  
+    height: 600px;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+  }
+  
+  .section-hero {
+    text-align: center;
+    // padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: 50px;
+  }
+  
+  .hero-section__title {
+    margin-top: 0px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    max-width: 696px;
+
+    @media screen and(min-width:768px) {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 30px;
+      max-width: 360px;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.62;
+      letter-spacing: 0.06em;
+    }
+    
+  }
+  
+  /* button замовити послугу */
+  
+  .hero-button {
+    min-width: 216px;
+    /* min-height: 50px; */
+    background-color: $accent-color;
+    color: $light-color;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: $accent-color;
+    margin: 0 auto;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  
+    transition: background-color 250ms $transform-function;
+  }
+  
+  .hero-button:hover,
+  .hero-button:focus {
+    background-color: #188ce8;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
