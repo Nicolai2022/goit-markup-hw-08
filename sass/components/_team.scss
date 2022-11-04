@@ -1,18 +1,20 @@
 .section-team {
     background-color: $background-section;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 60px;
+    }
   }
 
 
 
 
   .card-set__list {
-     @media screen and (min-width: 768px) {
-      display: flex;
+    display: flex;
       flex-wrap: wrap;
-      margin: -15px;
-      // gap: 30px;
-      
-    }
+      @media screen and (min-width: 768px) {
+       padding-bottom: 60px;
+      }
   }
 
 
@@ -33,10 +35,8 @@
       }
 
       @media screen and (min-width: 768px) {
-        // width: 354px;
-       width: calc((100% - 2 * 15px) / 2);
-      margin: 15px;
-    
+        width: calc((100% / 2) - 45px);
+        margin: 15px;
       }
 
       &:last-child {

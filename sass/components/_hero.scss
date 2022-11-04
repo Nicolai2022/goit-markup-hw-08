@@ -28,6 +28,10 @@
     // padding-top: 200px;
     padding-bottom: 200px;
     margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 60px;
+    }
   }
   
   .hero-section__title {

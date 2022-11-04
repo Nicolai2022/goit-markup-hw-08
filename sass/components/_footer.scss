@@ -11,12 +11,15 @@
   .footer__tablet {
     @media screen and (min-width: 768px) {
       justify-content: space-around;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
+      flex-wrap: wrap;
       align-items: baseline;
+  }
+  }
+
+  .footer__desktop {
+    @media screen and (min-width: 768px) {
+      margin-top: 60px;
   }
   }
 

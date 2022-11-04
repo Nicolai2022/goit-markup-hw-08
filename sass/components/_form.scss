@@ -41,6 +41,10 @@
   
     transition: border-color 250ms $transform-function;
     outline: none;
+
+    @media screen and (min-width: 480px) {
+      width: 370px;
+    }
   }
   
   .form__area:focus + .form__icon {
@@ -99,6 +103,10 @@
   
     transition: border-color 250ms $transform-function;
     outline: none;
+
+    @media screen and (min-width: 480px) {
+      width: 370px;
+    }
   }
   
   .form-comment__text:hover,
@@ -199,6 +207,10 @@
     color: $primary-color;
     margin-left: -10px;
     cursor: pointer;
+
+    @media screen and (min-width: 480px) {
+      font-size: 12px;
+    }
   }
   
   .form-topic__link {
@@ -209,6 +221,10 @@
     letter-spacing: 0.03em;
     color: $accent-btn;
     text-decoration: underline;
+
+    @media screen and (min-width: 480px) {
+      font-size: 12px;
+    }
   }
   
   .form-topic__icon {

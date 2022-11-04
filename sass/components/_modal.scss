@@ -8,6 +8,12 @@
     background: rgba(0, 0, 0, 0.2);
   
     transition: opacity 250ms $transform-function;
+
+    overflow-y: scroll;
+
+    // @media screen and (min-width: 480px) {
+    //   padding: 15px 30px;
+    // }
   }
   
   .backdrop.is-hidden {
@@ -26,6 +32,10 @@
     padding: 40px;
   
     background-color: $light-color;
+    @media screen and(min-width:480px) {
+      width: 450px;
+      height: 609px;
+    }
   }
   
   
