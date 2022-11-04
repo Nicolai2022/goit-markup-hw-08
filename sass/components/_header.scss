@@ -1,4 +1,5 @@
 .header {
+  position: relative;
     border: none;
     border-bottom: 1px solid #ececec;
     margin: 0 auto;
@@ -6,6 +7,12 @@
   }
 
   .header__container {
+    // @media screen and(min-width:480px) {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;
+    // }
+
     @media screen and(min-width:768px) {
       display: flex;
       align-items: center;
@@ -24,6 +31,60 @@
   
   .logo__dark {
     color: $dark-color;
+  }
+
+  .site-nav__button {
+    display: inline-flex;
+    margin: 0;
+padding: 0;
+border: none;
+
+@media screen and(min-width:767px) {
+  display: none;
+}
+  }
+
+  .site-nav__button .site-nav__cross {
+    display: none;
+  }
+
+  .site-nav__button.is-open .site-nav__cross {
+    display: block;
+  }
+
+  .site-nav__button.is-open .site-nav__menu {
+    display: none;
+  }
+
+  .menu-container {
+    height: 796px;
+    
+    background-color: rgb(196, 169, 169);
+    padding: 20px;
+    text-align: center;
+
+
+    &.is-open {
+      display: block;
+      @media screen and(min-width:768px) {
+        display: flex;
+      }
+    }
+
+    @media screen and(max-width:767px) {
+      display: none;
+      position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    }
+
+    @media screen and(min-width:768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
   }
 
   .contacts__link {
@@ -106,10 +167,21 @@ letter-spacing: 0.02em;
     text-decoration: none;
   
     transition: transform 250ms $transform-function;
+
+    @media screen and(min-width:480px) {
+      font-size: 40px;
+    }
+
+@media screen and(min-width:768px) {
+  font-size: $primary-font-size;
+    }
   }
   
   .site-nav__item {
-    margin-right: 50px;
+    // margin-right: 50px;
+    @media screen and(min-width:480px) {
+      text-align: left;
+    }
   }
   
   .site-nav__item:last-child {
