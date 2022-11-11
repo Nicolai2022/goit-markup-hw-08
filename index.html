@@ -24,10 +24,9 @@
           >
           <button
             type="button"
-            class="site-nav__button is-open"
+            class="site-nav__button is-open js-open-menu"
             aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
+
           >
             <svg
               width="40px"
@@ -36,18 +35,31 @@
             >
               <use
                 class="site-nav__cross"
-                href="./images/symbol-defs.svg#icon-button-close"
+                href="./images/symbol-defs.svg#icon-mobile-menu"
               ></use>
-              <use
-                class="site-nav__menu"
-                href="./images/symbol-defs.svg#icon-smartphone"
-              ></use>
+              
             </svg>
           </button>
 
-          <div class="menu-container" id="menu-container" data-menu>
+          <div class="menu-container js-menu-container" id="menu-container">
 
             <div class="navigation">
+              <button
+            type="button"
+            class="site-nav__button site-nav__button-close js-close-menu"
+            aria-expanded="false"
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Перемикач модельного меню"
+            >
+              <use
+                class="site-nav__menu"
+                href="./images/symbol-defs.svg#icon-mobile-close"
+              ></use>
+            </svg>
+          </button>
               <ul class="site-nav__list list">
                 <li class="site-nav__item">
                   <a class="site-nav__link current" href="#">Студія</a>
@@ -84,6 +96,23 @@
                       ></use></svg
                     >+38 096 111 11 11</a
                   >
+                </li>
+              </ul>
+              <ul class="socials-mobile list">
+                <li class="socials-mobile__item">
+                  <a
+                    class="socials-mobile__link"
+                    href="https://www.instagram.com/"
+                  >instagram</a>
+                </li>
+                <li class="socials-mobile__item">
+                  <a class="socials-mobile__link" href="https://twitter.com/">twitter</a>
+                </li>
+                <li class="socials-mobile__item">
+                  <a class="socials-mobile__link" href="https://www.facebook.com/">facebook</a>
+                </li>
+                <li class="socials-mobile__item">
+                  <a class="socials-mobile__link" href="https://www.linkedin.com/">linkedin</a>
                 </li>
               </ul>
             </div>
@@ -210,9 +239,10 @@
                 <img
                   class="card-set__image"
                   lang="en"
-                  src="./images/teamcard1.jpg"
+                  srcset="./images/team1-mobile1x-450.jpg 1x, ./images/team1-mobile2x-450.jpg 2x"
+                  src="./images/team1-mobile1x-450.jpg"
                   alt="працівник компанії"
-                  width="270"
+                  width="450"
                 />
                 <div class="team-card">
                   <h3 class="team-card__title">Ігор Дем'яненко</h3>
@@ -260,9 +290,10 @@
                 <img
                   class="card-set__image"
                   lang="en"
-                  src="./images/teamcard2.jpg"
+                  srcset="./images/team2-mobile1x-450.jpg 1x, ./images/team2-mobile2x-450.jpg 2x"
+                  src="./images/team2-mobile1x-450.jpg"
                   alt="працівник компанії"
-                  width="270"
+                  width="450"
                 />
                 <div class="team-card">
                   <h3 class="team-card__title">Ольга Рєпіна</h3>
@@ -310,9 +341,10 @@
                 <img
                   class="card-set__image"
                   lang="en"
-                  src="./images/teamcard3.jpg"
+                  srcset="./images/team3-mobile1x-450.jpg 1x, ./images/team3-mobile2x-450.jpg 2x"
+                  src="./images/team3-mobile1x-450.jpg"
                   alt="працівник компанії"
-                  width="270"
+                  width="450"
                 />
                 <div class="team-card">
                   <h3 class="team-card__title">Микола Тарасов</h3>
@@ -360,9 +392,10 @@
                 <img
                   class="card-set__image"
                   lang="en"
-                  src="./images/teamcard4.jpg"
+                  srcset="./images/team4-mobile1x-450.jpg 1x, ./images/team4-mobile2x-450.jpg 2x"
+                  src="./images/team4-mobile1x-450.jpg"
                   alt="працівник компанії"
-                  width="270"
+                  width="450"
                 />
                 <div class="team-card">
                   <h3 class="team-card__title">Михайло Єрмаков</h3>

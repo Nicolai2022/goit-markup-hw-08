@@ -4,13 +4,18 @@
   justify-content: center;
   @media screen and (min-width: 480px) {
     padding-bottom: 60px;
-     
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 
 .section-client__list {
 display: flex;
     flex-wrap: wrap;
+    gap: 15px;
 
     @media screen and (min-width: 480px) {
  
@@ -20,15 +25,17 @@ display: flex;
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    margin-bottom: 60px;
-   
+    // margin-bottom: 60px;
   }
 }
 
-//  .section-client__list {
-//   gap: 30px;
-//   display: flex;
-// }
+ .section-client__list {
+  @media screen and (min-width: 1200px) {
+    gap: 30px;
+  display: flex;
+  }
+ 
+}
 
 .section-client__item {
 
@@ -36,22 +43,20 @@ display: flex;
     // width: 210px;
     width: calc((100% / 2) - 45px);
     margin: 15px;
- 
 
-//     &:last-child {
-//     margin-bottom: 0;
-// }
   }
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 3 * 30px) / 3);
+    width: calc((100% / 3) - 45px);
+    // width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }
-}
 
-// .section-client__item {
-//   width: calc((100% - 60px) / 3);
-// }
+  @media screen and (min-width: 1200px) {
+width: 170px;
+margin: 0;
+}
+}
 
 .section-client__link {
   width: 100%;
@@ -74,4 +79,11 @@ display: flex;
 
 .section-client__icon {
   fill: currentColor;
+}
+
+.section.section-client {
+  @media screen and (min-width: 1200px) {
+padding-top: 94px;
+  }
+  
 }

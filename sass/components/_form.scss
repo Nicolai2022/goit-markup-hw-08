@@ -45,6 +45,10 @@
     @media screen and (min-width: 480px) {
       width: 370px;
     }
+
+    @media screen and (min-width: 1200px) {
+      width: 448px;
+    }
   }
   
   .form__area:focus + .form__icon {
@@ -106,6 +110,10 @@
 
     @media screen and (min-width: 480px) {
       width: 370px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 448px;
     }
   }
   
@@ -211,6 +219,10 @@
     @media screen and (min-width: 480px) {
       font-size: 12px;
     }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
   
   .form-topic__link {
@@ -224,6 +236,10 @@
 
     @media screen and (min-width: 480px) {
       font-size: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
     }
   }
   
