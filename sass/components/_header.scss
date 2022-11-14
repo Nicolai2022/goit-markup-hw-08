@@ -81,7 +81,7 @@ background-color: $light-color;
 
   .site-nav__button-close {
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 15px;
   }
 
@@ -103,8 +103,8 @@ background-color: $light-color;
   .menu-container {
     height: 796px;
     
-    background-color: rgb(196, 169, 169);
-    // background-color: $light-color;
+    // background-color: rgb(196, 169, 169);
+    background-color: $light-color;
     padding: 20px;
     text-align: center;
 
