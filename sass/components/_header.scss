@@ -33,6 +33,11 @@
     letter-spacing: 0.03em;
     text-decoration: none;
 
+    @media screen and(max-width:767px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+          }
+
     @media screen and(min-width:480px) {
 font-weight: 700;
 font-size: 24px;
@@ -73,6 +78,14 @@ background-color: $light-color;
       display: none;
     }
   }
+
+  .site-nav__button-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+
+
 
   .site-nav__button .site-nav__cross {
     display: none;
