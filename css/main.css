@@ -356,6 +356,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .header__container {
     display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -395,7 +396,7 @@ ul {
 
 .site-nav__button-close {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 @media screen and (min-width: 767px) {
   .site-nav__button-close {
@@ -538,7 +539,7 @@ ul {
   /* align-items: center; */
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .site-nav {
     display: flex;
     justify-content: space-between;
@@ -569,6 +570,7 @@ ul {
     font-size: 40px;
     padding: 0;
     margin-bottom: 35px;
+    margin-top: 50px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -616,7 +618,8 @@ ul {
   .site-nav__list {
     display: flex;
     align-items: center;
-    margin-left: 87px;
+    margin-left: 95px;
+    margin-right: 315px;
     gap: 50px;
   }
 }
@@ -670,6 +673,13 @@ ul {
 .site-nav__link:focus::after,
 .site-nav__link:active::after {
   opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .site-nav__link:hover::after,
+.site-nav__link:focus::after,
+.site-nav__link:active::after {
+    opacity: 0;
+  }
 }
 
 .socials-mobile {
@@ -736,7 +746,7 @@ ul {
   width: 100%;
   max-width: 696px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero-section__title {
     font-size: 26px;
     padding-top: 118px;
@@ -744,6 +754,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .hero-section__title {
+    padding-top: 118px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
@@ -870,7 +881,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .fiatures-block__title {
-    text-align: center;
+    text-align: start;
     width: 270px;
   }
 }
@@ -1136,7 +1147,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .section-client__item {
     width: calc(50% - 45px);
     margin: 15px;
@@ -1230,9 +1241,10 @@ ul {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer-box__title {
     text-align: center;
+    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1285,12 +1297,10 @@ ul {
   margin-bottom: 9px;
 }
 
-@media screen and (min-width: 480px) {
-  .footer-socials__list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
+.footer-socials__list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .footer-socials__link {

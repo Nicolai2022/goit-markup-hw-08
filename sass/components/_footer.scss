@@ -55,9 +55,9 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
-    // margin-top: 60px;
+    margin-top: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -115,11 +115,9 @@ text-align: left;
 }
 
 .footer-socials__list {
-  @media screen and (min-width: 480px) {
-   display: flex;
+  display: flex;
   justify-content: center;
   gap: 10px; 
-}
   
 }
 
