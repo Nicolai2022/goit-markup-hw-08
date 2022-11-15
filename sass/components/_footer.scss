@@ -23,16 +23,6 @@
 }
   }
 
-  // .footer__desktop {
-  //   @media screen and (min-width: 768px) {
-  //     margin-top: 60px;
-  // }
-  // }
-
-  // .footer__container {
-  //   display: flex;
-  // }
-
 .footer__block {
   margin-bottom: 20px;
 
@@ -79,6 +69,10 @@ text-align: left;
 .address__list {
   @media screen and (min-width: 480px) {
     text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  text-align: left;
 }
 }
 
