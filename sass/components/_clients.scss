@@ -12,13 +12,21 @@
   }
 }
 
+.section-client {
+  @media screen and (max-width: 1200px) {
+    padding-top: 60px;
+  }
+}
+
 .section-client__list {
 display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    // gap: 15px;
 
-    @media screen and (min-width: 480px) {
- 
+    @media screen and (max-width: 767px) {
+      gap: 0px;
+      display: flex;
+      justify-content: space-between;
     }
 
   @media screen and (min-width: 768px) {
@@ -41,7 +49,7 @@ display: flex;
 .section-client__item {
 
   @media screen and (max-width: 767px) {
-    width: calc((100% / 2) - 45px);
+    width: calc((100% / 2) - 30px);
     margin: 15px;
 
   }

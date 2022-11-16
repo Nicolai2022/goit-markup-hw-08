@@ -26,7 +26,7 @@
 .footer__block {
   margin-bottom: 20px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     // margin-top: 60px;
     font-weight: 700;
     font-size: 24px;
@@ -67,7 +67,7 @@ text-align: left;
 }
 
 .address__list {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
 }
 
@@ -145,7 +145,7 @@ text-align: left;
 
 .block-newsletter {
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
  margin-top: 60px;
  text-align: center;
 }
@@ -165,8 +165,13 @@ text-align: left;
   text-transform: uppercase;
   margin-bottom: 20px;
 
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+   }
+
   @media screen and (min-width: 1200px) {
    text-align: left;
+   margin-top: 0;
    }
 }
 
@@ -224,7 +229,7 @@ text-align: left;
 
   transition: background-color 250ms $transform-function;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
