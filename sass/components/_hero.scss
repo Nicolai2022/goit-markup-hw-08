@@ -45,6 +45,8 @@
 
     @media screen and (min-width: 1200px) {
       max-width: 1600px;
+      width: auto;
+      // width: 1200px;
       height: 600px;
       background-image: linear-gradient(
         to right,
@@ -54,6 +56,7 @@
       url(../../images/headerdesktop1x-1600.jpg);
     }
 
+  
   }
   
   .section-hero {
