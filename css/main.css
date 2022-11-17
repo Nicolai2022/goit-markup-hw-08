@@ -299,6 +299,11 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
 }
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -350,6 +355,14 @@ ul {
   border-bottom: 1px solid #ececec;
   margin: 0 auto;
   border: 1px solid #ececec;
+}
+@media screen and (min-width: 320px) {
+  .header {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -559,6 +572,13 @@ ul {
   display: flex;
 }
 
+@media screen and (min-width: 320px) {
+  .site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 767px) {
   .site-nav {
     display: flex;
@@ -748,6 +768,12 @@ ul {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 767px) {
+  .hero {
+    width: 480px;
+    height: 400px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     width: 768px;
@@ -765,6 +791,12 @@ ul {
   text-align: center;
   padding-bottom: 200px;
 }
+@media screen and (max-width: 767px) {
+  .section-hero {
+    padding-bottom: 118px;
+  }
+}
+
 .hero-section__title {
   margin-top: 0px;
   margin: 0 auto;
@@ -881,6 +913,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .fiatures-section__list .fiatures-section__item {
+    width: calc(50% - 45px);
+    margin: 15px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .fiatures-section__list .fiatures-section__item {
     margin: 0;
@@ -960,7 +998,7 @@ ul {
   .fiatures-block {
     display: flex;
     flex-wrap: wrap;
-    width: 354px;
+    width: 344px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1262,12 +1300,22 @@ ul {
 .footer__block {
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer__block {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 767px) {
   .footer__block {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__block {
+    text-align: left;
   }
 }
 
@@ -1280,6 +1328,11 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer-box__title {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 767px) {
   .footer-box__title {
@@ -1303,6 +1356,11 @@ ul {
   color: #fff;
 }
 
+@media screen and (min-width: 320px) {
+  .address__list {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 767px) {
   .address__list {
     text-align: center;
@@ -1395,6 +1453,7 @@ ul {
 @media screen and (min-width: 768px) {
   .block-newsletter__text {
     margin-top: 60px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1511,8 +1570,9 @@ ul {
   padding: 40px;
   background-color: #fff;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .modal {
+    top: 60%;
     width: 450px;
     height: 609px;
   }

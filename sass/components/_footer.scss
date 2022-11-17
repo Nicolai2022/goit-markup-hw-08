@@ -26,6 +26,10 @@
 .footer__block {
   margin-bottom: 20px;
 
+  @media screen and (min-width: 768px) {
+   text-align: center;
+}
+
   @media screen and (max-width: 767px) {
     // margin-top: 60px;
     font-weight: 700;
@@ -33,6 +37,11 @@
     line-height: 28px;
     text-align: center;
 }
+
+@media screen and (min-width: 1200px) {
+  text-align: left;
+}
+
 }
 
 .footer-box__title {
@@ -44,6 +53,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    text-align: center;
+ }
 
   @media screen and (max-width: 767px) {
     text-align: center;
@@ -67,6 +80,11 @@ text-align: left;
 }
 
 .address__list {
+
+
+  @media screen and (min-width: 320px) {
+    text-align: center;
+}
   @media screen and (max-width: 767px) {
     text-align: center;
 }
@@ -167,6 +185,7 @@ text-align: left;
 
   @media screen and (min-width: 768px) {
     margin-top: 60px;
+    text-align: center;
    }
 
   @media screen and (min-width: 1200px) {

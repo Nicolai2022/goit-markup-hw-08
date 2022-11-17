@@ -33,7 +33,10 @@
   
     background-color: $light-color;
 
-    @media screen and(min-width:480px) {
+    @media screen and(max-width:767px) {
+
+      top: 60%;
+
       width: 450px;
       height: 609px;
     }
