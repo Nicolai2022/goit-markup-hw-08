@@ -1592,14 +1592,14 @@ ul {
 }
 @media screen and (min-width: 320px) {
   .modal {
-    top: 80%;
+    top: 150%;
     width: 300px;
     height: 690px;
   }
 }
 @media screen and (min-width: 480px) {
   .modal {
-    top: 80%;
+    top: 150%;
     width: 450px;
     height: 609px;
   }
