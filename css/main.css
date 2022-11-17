@@ -1599,20 +1599,21 @@ ul {
 }
 @media screen and (min-width: 480px) {
   .modal {
-    top: 90%;
+    top: 60%;
     width: 450px;
     height: 609px;
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
-    top: 150%;
+    top: 80%;
     width: 450px;
     height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    top: 50%;
     width: 528px;
     height: 581px;
     padding: 40px;
