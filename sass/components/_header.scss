@@ -393,10 +393,13 @@ letter-spacing: 0.02em;
 
 .socials-mobile {
 display: flex;
-justify-content: space-evenly;
-margin-right: 40px;
 margin-top: 64px;
+gap: 20px;
+margin-left: 5px;
 
+@media screen and(min-width:320px) {
+  max-width: 300;
+}
 
 @media screen and(min-width:768px) {
   display: none;
@@ -413,6 +416,7 @@ font-weight: 500;
 font-size: 18px;
 line-height: calc(22 / 18);
 letter-spacing: 0.02em;
+
 }
 
 .socials-mobile__item {
@@ -423,4 +427,8 @@ letter-spacing: 0.02em;
   &:nth-child(n + 4) {
  border: none;
   }
+
+  @media screen and (min-width:320px) and (max-width:479px) {
+  width: 300px;
+}
   }

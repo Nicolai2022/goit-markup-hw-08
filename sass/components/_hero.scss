@@ -10,7 +10,7 @@
   
     // height: 600px;
     height: 480px;
-    max-width: 1600px;
+    // width: 1600px;
     // padding-top: 200px;
     // padding-bottom: 200px;
     margin-left: auto;
@@ -44,7 +44,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width: 1200px;
+      max-width: 1600px;
       height: 600px;
       background-image: linear-gradient(
         to right,
@@ -53,6 +53,7 @@
       ),
       url(../../images/headerdesktop1x-1600.jpg);
     }
+
   }
   
   .section-hero {
