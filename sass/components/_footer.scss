@@ -220,6 +220,11 @@ text-align: left;
 }
 
 .block {
+
+  @media screen and (min-width: 320px) {
+    // width: 450px;
+    width: 100%;
+   }
   @media screen and (min-width: 1200px) {
     display: flex;
     // align-items: flex-end;

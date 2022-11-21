@@ -301,7 +301,7 @@ ul {
 }
 @media screen and (min-width: 320px) {
   .container {
-    width: 320px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 480px) {
@@ -1511,6 +1511,11 @@ ul {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .block {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .block {
     display: flex;
