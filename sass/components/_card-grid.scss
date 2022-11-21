@@ -4,18 +4,10 @@
     gap: 30px;
   }
   
-  // .grid__item {
-    
-  //   @media screen and (min-width: 480px) {
-  //     width: 450px;
-  //     border: 1px solid #eeeeee;
-  //   }
-
-  //   @media screen and (min-width: 768px) {
-  //     width: calc((100% / 2) - 45px);
-  //     margin: 15px;
-  //   }
-  // }
+  .grid__item {
+    width: 370px;
+    border: 1px solid #eeeeee;
+  }
   
   .grid__item:hover,
   .grid__item:focus {

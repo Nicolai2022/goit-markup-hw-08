@@ -118,7 +118,9 @@ background-color: $light-color;
     }
 
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      
       @media screen and(min-width:768px) {
         display: flex;
       }
@@ -126,7 +128,8 @@ background-color: $light-color;
 
     @media screen and(max-width:767px) {
       display: none;
-      position: absolute;
+      position: fixed;
+      height: 100%;
     top: 0;
     left: 0;
     width: 100%;
@@ -188,6 +191,7 @@ letter-spacing: 0.02em;
 
     @media screen and(min-width:1200px) {
     margin-left: 0;
+    font-size: 14px;
     }
   }
   
@@ -323,7 +327,7 @@ letter-spacing: 0.02em;
       display: flex;
       align-items: center;
       margin-left: 95px;
-      margin-right: 315px;
+      margin-right: 290px;
       gap: 50px;
     }
   }
@@ -345,7 +349,7 @@ letter-spacing: 0.02em;
   
   .contacts-mobile {
     @media screen and(max-width:767px) {
-      margin-top: 300px;
+      margin-top: auto;
     }
    
   }

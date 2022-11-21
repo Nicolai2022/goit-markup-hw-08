@@ -205,6 +205,11 @@ text-align: left;
   border-radius: 4px;
   cursor: pointer;
 
+  @media screen and (min-width: 320px) {
+    // width: 450px;
+    width: 100%;
+   }
+
   @media screen and (min-width: 480px) {
     width: 450px;
    }
